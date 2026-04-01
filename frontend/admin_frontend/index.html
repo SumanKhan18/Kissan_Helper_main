@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="./public/KissanHelper.jpg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KissanHelper</title>
+</head>
+
+<body>
+  <script>
+    // Apply theme immediately to prevent flash
+    (function() {
+      const theme = localStorage.getItem('theme') || 'dark';
+      let appliedTheme = theme;
+      if (theme === 'system') {
+        appliedTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.classList.add(appliedTheme);
+      document.body.classList.add(appliedTheme);
+      document.documentElement.setAttribute('data-theme', appliedTheme);
+      document.body.setAttribute('data-theme', appliedTheme);
+      document.documentElement.style.colorScheme = appliedTheme;
+    })();
+  </script>
+  <div id="root"></div>
+
+  <!-- File upload input -->
+  <!-- <div style="margin: 20px;">
+    <label for="fileUpload">Upload an image/file:</label>
+    <input type="file" id="fileUpload" />
+  </div> -->
+
+  <!-- Your React app entry point -->
+  <script type="module" src="/src/main.jsx"></script>
+
+  <!-- Razorpay script -->
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+</body>
+
+</html>

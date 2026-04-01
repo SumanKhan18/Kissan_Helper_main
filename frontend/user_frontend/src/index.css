@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+:root {
+    color-scheme: dark;
+}
+
+body {
+    @apply bg-black text-white;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom styles for overlapping sections */
+.parallax-section {
+    position: relative;
+    overflow: hidden; /* Prevent overflow issues */
+    transition: transform 0.3s ease-in-out;
+}

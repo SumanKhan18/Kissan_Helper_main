@@ -1,0 +1,90 @@
+{
+  "rice": {
+    "data": [
+      {
+        "plantName": "Rice",
+        "season": "spring",
+        "soilType": "clay loam",
+        "soilCondition": "well-drained",
+        "temperature": "25-30°C",
+        "humidity": "80-85%",
+        "disease": "Blast",
+        "treatmentType": "chemical",
+        "medicines": [
+          {
+            "name": "Carbendazim",
+            "dosage": "1-2 grams per liter",
+            "frequency": "Every 14 days",
+            "instructions": "Apply as a preventive spray early morning",
+            "precautions": "Wear protective gear, avoid application during high winds"
+          }
+        ]
+      },
+      {
+        "plantName": "Rice",
+        "season": "summer",
+        "soilType": "clay loam",
+        "soilCondition": "waterlogged",
+        "temperature": "30-35°C",
+        "humidity": "70-75%",
+        "disease": "Bacterial Leaf Blight",
+        "treatmentType": "both",
+        "medicines": [
+          {
+            "name": "Streptocycline",
+            "dosage": "15g per hectare",
+            "frequency": "Every 7 days",
+            "instructions": "Mix with water and spray during early morning",
+            "precautions": "Use face mask and gloves during application"
+          }
+        ]
+      }
+    ]
+  },
+  "wheat": {
+    "data": [
+      {
+        "plantName": "Wheat",
+        "season": "winter",
+        "soilType": "loamy",
+        "soilCondition": "well-drained",
+        "temperature": "15-20°C",
+        "humidity": "60-65%",
+        "disease": "Rust",
+        "treatmentType": "chemical",
+        "medicines": [
+          {
+            "name": "Tebuconazole",
+            "dosage": "1.5 ml per liter",
+            "frequency": "Every 15 days",
+            "instructions": "Apply at first sign of rust",
+            "precautions": "Avoid application during rain forecast"
+          }
+        ]
+      }
+    ]
+  },
+  "corn": {
+    "data": [
+      {
+        "plantName": "Corn",
+        "season": "summer",
+        "soilType": "sandy loam",
+        "soilCondition": "well-drained",
+        "temperature": "25-30°C",
+        "humidity": "65-70%",
+        "disease": "Leaf Blight",
+        "treatmentType": "biological",
+        "medicines": [
+          {
+            "name": "Trichoderma viride",
+            "dosage": "5g per liter",
+            "frequency": "Weekly",
+            "instructions": "Apply as soil treatment and foliar spray",
+            "precautions": "Store in cool and dry place"
+          }
+        ]
+      }
+    ]
+  }
+}

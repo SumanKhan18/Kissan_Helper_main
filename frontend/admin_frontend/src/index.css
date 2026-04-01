@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+:root {
+    color-scheme: dark;
+}
+
+body {
+    @apply bg-white dark:bg-black text-gray-900 dark:text-white;
+    font-family: 'Inter', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Ensure all elements respect theme */
+* {
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom styles for overlapping sections */
+.parallax-section {
+    position: relative;
+    overflow: hidden; /* Prevent overflow issues */
+    transition: transform 0.3s ease-in-out;
+}
